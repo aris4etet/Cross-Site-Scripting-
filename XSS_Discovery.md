@@ -72,6 +72,10 @@ xsser --auto "http://target.com/page?param=test"
 
 # Custom payload
 xsser -u "http://target.com?q=test" --payload="<script>alert(1)</script>"
+
+##Complex example
+xsser -u "http://94.237.120.137:36881/" -g "?fullname=XSS&username=test&password=test&email=test@gmail.com" --auto
+
 ```
 
 #### dalfox
