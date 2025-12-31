@@ -74,7 +74,17 @@ xsser --auto "http://target.com/page?param=test"
 xsser -u "http://target.com?q=test" --payload="<script>alert(1)</script>"
 
 ##Complex example
-xsser -u "http://94.237.120.137:36881/" -g "?fullname=XSS&username=test&password=test&email=test@gmail.com" --auto
+# Test fullname
+xsser -u "http://94.237.120.137:36881/" -g "?fullname=XSS&username=test&password=test&email=test@gmail.com"
+
+# Test username
+xsser -u "http://94.237.120.137:36881/" -g "?fullname=test&username=XSS&password=test&email=test@gmail.com"
+
+# Test password
+xsser -u "http://94.237.120.137:36881/" -g "?fullname=test&username=test&password=XSS&email=test@gmail.com"
+
+# Test email (keep @ format)
+xsser -u "http://94.237.120.137:36881/" -g "?fullname=test&username=test&password=test&email=XSS@gmail.com"
 
 ```
 
