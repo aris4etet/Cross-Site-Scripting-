@@ -1,6 +1,3 @@
-Here's a concise cutsheet for XSS Discovery:
-
-```markdown
 # XSS Discovery Quick Reference
 
 ## Discovery Methods
@@ -451,6 +448,4 @@ Result: NOT vulnerable ❌
 3. HTTP headers (Cookie, User-Agent)
 4. File upload metadata
 5. JSON/XML inputs
-```
 
-Comprehensive and actionable! 🔍⚡
