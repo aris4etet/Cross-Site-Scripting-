@@ -101,6 +101,12 @@
 
 <!-- Level 5: HTML entities -->
 &lt;script&gt;alert(1)&lt;/script&gt;
+<
+<!-- Level 6: Display cookie -->
+
+<script>alert(document.cookie)</script>
+
+
 ```
 
 ## Verification Methods
